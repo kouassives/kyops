@@ -1,11 +1,11 @@
 [project]
 name = "kyops"
-version = "0.1.0"
+version = "0.0.1"
 description = "kyops Python library for performing operations on data structures in python"
 authors = [
     {name = "KOUASSI Yves", email = "kouassives@gmail.com"},
 ]
-
+readme = "README.md"
 dependencies = []
 
 requires-python = ">=3.8"
