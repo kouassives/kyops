@@ -12,7 +12,7 @@ requires-python = ">=3.8"
 license = {text = "MIT"}
 
 [project.urls]
-homepage = "https://github.com/kouassives/kyops"
+homepage = "https://github.com/kouassives/kyops/tree/main/Python"
 
 [project.optional-dependencies]
 [tool]
