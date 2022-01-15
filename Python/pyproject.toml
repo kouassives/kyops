@@ -1,6 +1,6 @@
 [project]
 name = "kyops"
-version = "0.0.1"
+version = "0.1.0-b"
 description = "kyops Python library for performing operations on data structures in python"
 authors = [
     {name = "KOUASSI Yves", email = "kouassives@gmail.com"},
