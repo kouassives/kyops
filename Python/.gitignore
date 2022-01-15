@@ -1,0 +1,5 @@
+dist/
+.pdm.toml
+__pypackages__/
+__pycache__
+.pytest_cache
