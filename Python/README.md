@@ -34,7 +34,7 @@ my_dict_to_update = {
         }
     }
 }
-newValues = {
+new_values = {
     "client" : {
         "zip": {
             "Dep":"35",
@@ -47,13 +47,35 @@ newValues = {
     }
 }
 
-kyops.merge_nested_dict(my_dict_to_update, newValues)
+from kyops import Ndict
+n_dict = Ndict(my_dict_to_update)
+n_dict.update(new_values)
+
+# Now my_dict.data contains updated datas
+
+
+
+```
+
+It possible to use `merge_nested_dict` static method:
+
+```python
+kyops.merge_nested_dict(my_dict_to_update, new_values)
 print(my_dict_to_update)
+
 #Output
 # {
-#     "client" : {
-#                 "username" : "toto"
-#                 "password" : "confidenti@lP@ssword"
+#     "client": {
+#         "zip": {
+#             "Dep": "35",
+#             "code": "0000"
+#         },
+#         "username": "toto",
+#         "password": "confidenti@lP@ssword",
+#         "contacts": {
+#             "tel": "000000",
+#             "email": "email@gmail.com"
+#         }
 #     }
 # }
 ```

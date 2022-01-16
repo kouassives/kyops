@@ -1,3 +1,3 @@
-from .kyops import * 
-__all__ = ['merge_nested_dict']
+from .n_dict import * 
+__all__ = ['Ndict, merge_nested_dict']
 
